@@ -1,0 +1,2 @@
+SELECT wl_user FROM watchlist INNER JOIN user_properties ON ((wl_user=up_user))
+WHERE (wl_user != 1) AND wl_namespace = '0' AND wl_title = 'Main_page' AND up_property = 'enotifwatchlistpages';
